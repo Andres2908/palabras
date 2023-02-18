@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import PageOne from "./components/PageOne";
+import PageTwo from "./components/PageTwo";
+import Container from "react-bootstrap/Container";
+import React, { useState } from "react";
 
-function App() {
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./components/css/styles.css";
+
+export function App() {
+  const [pageActive, setPageActive] = useState(0);
+
+  const handleContinue = () => {
+    setPageActive(1);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {pageActive === 0 && <PageOne handleContinue={handleContinue} />}
+      {pageActive === 1 && <PageTwo />}
+    </>
   );
 }
-
-export default App;

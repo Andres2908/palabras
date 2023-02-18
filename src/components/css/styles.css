@@ -1,0 +1,32 @@
+.containerCustom {
+    border: 1px solid #ccc;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 35%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F3F3;
+}
+.colorCardSuccess {
+    background-color: #6AAA64;;
+}
+.colorCardWarning {
+    background-color: #CEB02C;;
+    ;
+}
+.colorCardUndefined {
+    background-color: #939B9F;
+    ;
+}
+.colorNull {
+    background-color: #FFFFFF;
+    ;
+}
+.rowPush {
+    padding-left: 20px;
+}
+.paddingContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+}
